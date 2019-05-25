@@ -11,12 +11,18 @@ public class testApp {
     {
         Assert.assertEquals("1", Tools.compute("1"));
         Assert.assertEquals("2", Tools.compute("2"));
-        Assert.assertEquals("FooFoo", Tools.compute("3"));
         Assert.assertEquals("4", Tools.compute("4"));
+        Assert.assertEquals("8", Tools.compute("8"));
+    }
+
+    @Test
+    public void divisibleCases()
+
+    {
+        Assert.assertEquals("FooFoo", Tools.compute("3"));
         Assert.assertEquals("BarBar", Tools.compute("5"));
         Assert.assertEquals("Foo", Tools.compute("6"));
         Assert.assertEquals("QixQix", Tools.compute("7"));
-        Assert.assertEquals("8", Tools.compute("8"));
         Assert.assertEquals("Foo", Tools.compute("9"));
         Assert.assertEquals("Bar*", Tools.compute("10"));
         Assert.assertEquals("Foo", Tools.compute("13"));
