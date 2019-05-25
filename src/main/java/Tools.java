@@ -17,7 +17,7 @@ public class Tools {
         }
     }
 
-    public static boolean hasConvertedValue(String str) {
+    private static boolean hasConvertedValue(String str) {
         boolean found = false;
         int val;
         for (int i = 0; i < str.length(); i++){
@@ -30,6 +30,11 @@ public class Tools {
         return found;
     }
 
+    /**
+     * See function definition @ http://codingdojo.org/kata/FooBarQix/
+     * @param str
+     * @return
+     */
     public static String compute(String str) {
 
         int number;
